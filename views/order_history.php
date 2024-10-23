@@ -34,6 +34,6 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <p>هیچ سفارشی یافت نشد.</p>
         <?php endif; ?>
     </div>
-    <a href="product_list.php" class="return-btn">بازگشت به لیست محصولات</a>
+    <a href="../controllers/product_controller.php" class="return-btn">بازگشت به لیست محصولات</a>
 </body>
 </html>

@@ -15,7 +15,7 @@ class Order {
 
     public function create($total_price) {
         $jdate = new jDateTime(true, true, 'Asia/Tehran');
-        $shamsi_date_time = $jdate->date("d-m-Y H:i:s", time());
+        $shamsi_date_time = $jdate->date("H:i:s d-m-Y ", time());
 
         $query = "INSERT INTO " . $this->table_name . " (total_price, created_at) VALUES (:total_price, :created_at)";
         $stmt = $this->conn->prepare($query);

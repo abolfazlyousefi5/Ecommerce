@@ -186,56 +186,56 @@ h1 {
 }
 
 .confirmation {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .confirmation p {
-    font-size: 18px;
-    color: #444;
+  font-size: 18px;
+  color: #444;
 }
 
 .return-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #20b2aa; /* LightSeaGreen */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    margin: 20px auto;
-    display: block;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #20b2aa; /* LightSeaGreen */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s;
 }
 
 .return-btn:hover {
-    background-color: #2e8b57; /* SeaGreen */
+  background-color: #2e8b57; /* SeaGreen */
 }
 
 /* سایر استایل‌ها */
 
 .cart-list {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
 }
 
 .checkout-form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .checkout-form .btn {
-    background-color: #87cefa; /* LightSkyBlue */
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
+  background-color: #87cefa; /* LightSkyBlue */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
 }
 
 .checkout-form .btn:hover {
-    background-color: #4682b4; /* SteelBlue */
+  background-color: #4682b4; /* SteelBlue */
 }
 
 .history-container {
@@ -258,7 +258,8 @@ h1 {
   border-collapse: collapse;
 }
 
-.order-history th, .order-history td {
+.order-history th,
+.order-history td {
   padding: 15px;
   border-bottom: 1px solid #ddd;
   text-align: left;
@@ -334,4 +335,47 @@ h1 {
 .order-item p {
   margin: 5px 0;
   color: #444;
+}
+
+/* سایر استایل‌ها */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #20b2aa; /* LightSeaGreen */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #2e8b57; /* SeaGreen */
 }

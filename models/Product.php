@@ -1,6 +1,5 @@
 <?php
-class Product
-{
+class Product {
     private $conn;
     private $table_name = "products";
 
@@ -10,16 +9,15 @@ class Product
     public $price;
     public $image;
 
-    public function __construct($db)
-    {
+    public function __construct($db) {
         $this->conn = $db;
     }
 
-    public function read()
-    {
+    public function read() {
         $query = "SELECT * FROM " . $this->table_name;
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt;
     }
 }
+?>

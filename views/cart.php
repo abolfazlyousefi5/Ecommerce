@@ -31,13 +31,15 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     <a href="../controllers/cart_controller.php?action=delete&id=<?php echo htmlspecialchars($item['id']); ?>" class="btn">حذف</a>
                 </div>
             <?php endforeach; ?>
-            <form action="../controllers/order_controller.php" method="post">
-                <button type="submit" class="btn">نهایی کردن خرید</button>
-            </form>
+            <div class="finalize-btn-container">
+                <form action="../controllers/order_controller.php" method="post">
+                    <button type="submit" class="btn">نهایی کردن خرید</button>
+                </form>
+            </div>
         <?php else: ?>
             <p>سبد خرید خالی است.</p>
         <?php endif; ?>
-    </div>
+
     <a href="../controllers/product_controller.php" class="return-btn">بازگشت به لیست محصولات</a>
 </body>
 </html>

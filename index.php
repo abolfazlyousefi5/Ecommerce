@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>صفحه اصلی فروشگاه</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
 </head>
 <body id="ba">
     <header>

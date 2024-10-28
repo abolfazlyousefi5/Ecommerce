@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>فروشگاه</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/product_list.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    </head>
 <body>
     <h1>لیست محصولات</h1>
     <div class="product-list">

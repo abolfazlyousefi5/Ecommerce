@@ -1,0 +1,40 @@
+.order-history {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-item {
+    background-color: #7de2e9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .order-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .order-item p {
+    margin: 5px 0;
+    color: #444;
+  }
+  .return-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #20b2aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s;
+  }

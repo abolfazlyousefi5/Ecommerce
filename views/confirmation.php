@@ -19,7 +19,9 @@ $shamsi_date_time = $jdate->date("H:i:s d-m-Y", strtotime($order['created_at']))
 <head>
     <meta charset="UTF-8">
     <title>تأیید خرید</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
 </head>
 <body>
     <h1>خرید شما با موفقیت نهایی شد!</h1>

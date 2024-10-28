@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>ورود</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
 </head>
 <body>
     <h1>ورود</h1>

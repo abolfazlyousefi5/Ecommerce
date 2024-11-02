@@ -1,0 +1,69 @@
+/* استایل‌های بخش امتیازدهی */
+.average-rating {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.average-rating h3 {
+    font-size: 24px;
+    color: #ffcc00; /* رنگ زرد برای امتیاز */
+}
+
+.rating-form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rating-form label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.rating-form select {
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.rating-form button {
+    padding: 10px 20px;
+    background-color: #87cefa; /* LightSkyBlue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.rating-form button:hover {
+    background-color: #4682b4; /* SteelBlue */
+}
+
+.star-rating {
+    display: inline-block;
+    direction: rtl;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #ccc;
+    font-size: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ffcc00; /* رنگ زرد برای ستاره‌ها */
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffcc00;
+}

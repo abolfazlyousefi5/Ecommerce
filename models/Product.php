@@ -32,5 +32,14 @@ class Product {
         $this->price = $row['price'];
         $this->image = $row['image'];
     }
+
+    public function search() {
+        $query = "SELECT * FROM " . $this->table_name . " WHERE name LIKE :name";
+        $stmt = $this->conn->prepare($query);
+        $search_term = "%" . $this->name . "%";
+        $stmt->bindParam(':name', $search_term);
+        $stmt->execute();
+        return $stmt;
+    }
 }
 ?>

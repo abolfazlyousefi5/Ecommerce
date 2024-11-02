@@ -96,3 +96,44 @@ h1 {
 .product button:hover {
     background-color: #4682b4; /* SteelBlue */
 }
+/* سرچ محصولات  */
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #87cefa; /* LightSkyBlue */
+    outline: none;
+}
+
+.search-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #87cefa; /* LightSkyBlue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.search-form button[type="submit"]:hover {
+    background-color: #4682b4; /* SteelBlue */
+}

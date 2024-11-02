@@ -9,6 +9,11 @@
 </head>
 <body>
     <h1>لیست محصولات</h1>
+    <form class="search-form" action="../controllers/search_controller.php" method="get">
+        <label for="search">جستجوی محصولات:</label>
+        <input type="text" id="search" name="search" placeholder="نام محصول را وارد کنید...">
+        <button type="submit" class="btn">جستجو</button>
+    </form>
     <div class="product-list">
         <?php if (!empty($products)): ?>
             <?php foreach ($products as $product): ?>

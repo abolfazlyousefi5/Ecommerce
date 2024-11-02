@@ -1,8 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: url("http://localhost/ecommerce/assets/images/hero-bg.jpg")
-    no-repeat center center/cover;
-    background-color: #fdfdfe;
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4);    background-color: #d9dae4; /* رنگ پس‌زمینه */
     margin: 0;
     padding: 0;
     color: #444;
@@ -11,7 +9,7 @@ body {
 h1 {
     text-align: center;
     padding: 20px;
-    background-color: #ffb6c1; /* LightPink */
+    background:linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4); /* رنگ سربرگ */
     color: #fff;
     margin: 0;
     font-size: 24px;
@@ -26,8 +24,7 @@ h1 {
 }
 
 .product {
-  background-color: #ef92dc;
-  /* background-color: #fff; */
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4); /* رنگ جدید */
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     margin: 10px;
@@ -54,7 +51,7 @@ h1 {
 .product h2 {
     font-size: 18px;
     margin: 10px 0;
-    color: #ff69b4; /* HotPink */
+    color: #007a8b; /* رنگ عنوان */
 }
 
 .product p {
@@ -81,10 +78,11 @@ h1 {
     padding: 5px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
+    background: #007a8b;
 }
 
 .product button {
-    background-color: #87cefa; /* LightSkyBlue */
+    background-color: #19a492; /* رنگ دکمه */
     color: white;
     text-decoration: none;
     border: none;
@@ -94,10 +92,10 @@ h1 {
 }
 
 .product button:hover {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #007a8b; /* رنگ دکمه در حالت هاور */
 }
-/* سرچ محصولات  */
 
+/* استایل‌های بخش جستجوی محصولات */
 .search-form {
     display: flex;
     justify-content: center;
@@ -113,19 +111,20 @@ h1 {
 .search-form input[type="text"] {
     width: 300px;
     padding: 10px;
+    background: right;
     border: 2px solid #e0e0e0;
     border-radius: 5px;
     transition: border-color 0.3s;
 }
 
 .search-form input[type="text"]:focus {
-    border-color: #87cefa; /* LightSkyBlue */
+    border-color: #007a8b; /* رنگ نوار تمرکز */
     outline: none;
 }
 
 .search-form button[type="submit"] {
     padding: 10px 20px;
-    background-color: #87cefa; /* LightSkyBlue */
+    background-color: #19a492; /* رنگ دکمه جستجو */
     color: white;
     border: none;
     border-radius: 5px;
@@ -135,5 +134,5 @@ h1 {
 }
 
 .search-form button[type="submit"]:hover {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #007a8b; /* رنگ دکمه جستجو در حالت هاور */
 }

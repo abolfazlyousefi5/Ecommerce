@@ -17,7 +17,7 @@
 .rating-form label {
     font-size: 18px;
     margin-right: 10px;
-    color: #333;
+    color: #007a8b; /* رنگ متن برچسب */
 }
 
 .rating-form select {
@@ -30,7 +30,7 @@
 
 .rating-form button {
     padding: 10px 20px;
-    background-color: #87cefa; /* LightSkyBlue */
+    background-color: #55f5e1; /* رنگ دکمه */
     color: white;
     border: none;
     border-radius: 5px;
@@ -40,7 +40,7 @@
 }
 
 .rating-form button:hover {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #007a8b; /* رنگ دکمه در حالت هاور */
 }
 
 .star-rating {

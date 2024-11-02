@@ -1,8 +1,6 @@
 body {
-    background: url("http://localhost/ecommerce/assets/images/hero-bg.jpg")
-    no-repeat center center/cover;
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4); /* رنگ‌های گرادیان */
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,7 +9,7 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #87cefa; /* LightSkyBlue */
+    background-color: #007a8b; /* رنگ دکمه */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -19,5 +17,5 @@ body {
 }
 
 .btn:hover {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #55f5e1; /* رنگ دکمه در حالت هاور */
 }

@@ -2,7 +2,7 @@
 .comments-section {
     margin-top: 40px;
     padding: 20px;
-    background-color: #fff;
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4); /* رنگ‌های گرادیان */
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -12,25 +12,27 @@
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
+    color: #007a8b; /* رنگ متن عنوان */
 }
 
 .comment {
     margin-bottom: 15px;
     padding: 15px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #ffb6c1; /* LightPink */
+    background-color: #336998;
+    border-left: 5px solid #ff9e79; /* رنگ نوار سمت چپ */
     border-radius: 5px;
 }
 
 .comment p {
     margin: 0 0 10px;
     font-size: 16px;
+    color: #b0d1d5; /* رنگ متن کامنت */
 }
 
 .comment small {
     display: block;
     text-align: right;
-    color: #aaa;
+    color: #aaa; /* رنگ تاریخ کامنت */
 }
 
 .comments-section form {
@@ -41,6 +43,7 @@
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
+    color: #007a8b; /* رنگ متن برچسب */
 }
 
 .comments-section textarea {
@@ -55,7 +58,7 @@
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #87cefa; /* LightSkyBlue */
+    background-color: #55f5e1; /* رنگ دکمه */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -63,14 +66,14 @@
 }
 
 .comments-section .btn:hover {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #007a8b; /* رنگ دکمه در حالت هاور */
 }
 
 /* استایل‌های بخش افزودن نظر */
 .add-comment-form {
     margin-top: 20px;
     padding: 20px;
-    background-color: #fff;
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4);
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -80,16 +83,19 @@
     margin-bottom: 15px;
     font-size: 22px;
     text-align: center;
+    color: #007a8b; /* رنگ عنوان */
 }
 
 .add-comment-form label {
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
+    color: #007a8b; /* رنگ متن برچسب */
 }
 
 .add-comment-form textarea {
     width: 100%;
+    height: 148px;
     padding: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
@@ -100,8 +106,8 @@
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #87cefa; /* LightSkyBlue */
-    color: white;
+    background-color: #19a492; /* رنگ دکمه */
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
@@ -109,5 +115,5 @@
 }
 
 .add-comment-form .btn:hover {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #007a8b; /* رنگ دکمه در حالت هاور */
 }

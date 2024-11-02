@@ -1,7 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: url("http://localhost/ecommerce/assets/images/hero-bg.jpg")
-    no-repeat center center/cover;
     background-color: #fdfdfe;
     color: #333;
     margin: 0;
@@ -16,7 +14,7 @@ body {
 }
 
 .cart-item {
-    background-color: #fff;
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4);
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     margin: 10px;
@@ -35,18 +33,18 @@ body {
 .cart-item h2 {
     font-size: 18px;
     margin: 10px 0;
-    color: #ff69b4; /* HotPink */
+    color: #007a8b; /* HotPink */
 }
 
 .cart-item p {
     font-size: 14px;
-    color: #666;
+    color: #007a8b;
 }
 
 .cart-item .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #87cefa; /* LightSkyBlue */
+    background-color: #19a492; /* LightSkyBlue */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;

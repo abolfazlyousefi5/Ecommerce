@@ -20,6 +20,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/cart.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 </head>
 <body>
     <h1>سبد خرید</h1>

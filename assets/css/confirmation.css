@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4); /* رنگ‌های گرادیان */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #007a8b; /* رنگ سربرگ و پابرگ */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.confirmation-message {
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4);    padding: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-message h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007a8b; /* رنگ عنوان */
+}
+
+.confirmation-message p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.confirmation-message strong {
+    color: #5c4840; /* رنگ کد رهگیری */
+}
+
+.confirmation-message .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #19a492; /* رنگ دکمه */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.confirmation-message .btn:hover {
+    background-color: #007a8b; /* رنگ دکمه در حالت هاور */
+}

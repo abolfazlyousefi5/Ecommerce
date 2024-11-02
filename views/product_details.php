@@ -35,6 +35,7 @@ $average_rating = $average_rating ?: 0;
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/comments.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/ratings.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 </head>
 <body>
     <header>

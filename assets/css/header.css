@@ -1,5 +1,5 @@
 header {
-    background-color: #ffb6c1; /* LightPink */
+    background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4); /* رنگ جدید */
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -37,5 +37,5 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff69b4; /* HotPink */
+    color: #55f5e1; /* رنگ جدید */
 }

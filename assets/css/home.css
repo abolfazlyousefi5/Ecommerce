@@ -1,33 +1,32 @@
 .hero {
-    text-align: center;
-    background: url("http://localhost/ecommerce/assets/images/hero-bg.jpg")
-      no-repeat center center/cover;
-    color: white;
-    padding: 100px 0;
-    height: 389px;
-  }
-  
-  .hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #a7737b;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #987277;
-  }
-  
-  .hero .btn {
-    background-color: #87cefa; /* LightSkyBlue */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .hero .btn:hover {
-    background-color: #4682b4; /* SteelBlue */
-  }
+  text-align: center;
+  background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4);
+  color: white;
+  padding: 100px 0;
+  height: 389px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #55f5e1; /* رنگ متن عنوان */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ff9e79; /* رنگ متن توضیحات */
+}
+
+.hero .btn {
+  background-color: #007a8b; /* رنگ دکمه */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #55f5e1; /* رنگ دکمه در حالت هاور */
+}

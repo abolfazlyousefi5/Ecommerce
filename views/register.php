@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ثبت‌نام</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/register.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/form.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">

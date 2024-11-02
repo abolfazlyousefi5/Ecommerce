@@ -22,6 +22,7 @@ $shamsi_date_time = $jdate->date("H:i:s d-m-Y", strtotime($order['created_at']))
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cart.css">
 </head>
 <body>
     <h1>خرید شما با موفقیت نهایی شد!</h1>

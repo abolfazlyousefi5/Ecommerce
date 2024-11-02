@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         header("Location: ../controllers/product_controller.php");
+        exit();
     } else {
         echo "ایمیل یا رمز عبور اشتباه است.";
     }

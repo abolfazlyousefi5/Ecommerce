@@ -1,6 +1,8 @@
 <?php
 session_start();
 session_destroy();
+header("Location: register.php"); // هدایت به صفحه ثبت‌نام بعد از خروج
+exit();
 ?>
 <!DOCTYPE html>
 <html lang="fa">
@@ -13,6 +15,6 @@ session_destroy();
 </head>
 <body>
     <h1>شما با موفقیت خارج شدید.</h1>
-    <a href="login.php" class="btn">ورود مجدد</a>
+    <a href="register.php" class="btn">ثبت‌نام مجدد</a>
 </body>
 </html>

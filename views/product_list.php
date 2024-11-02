@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/product_list.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
-    </head>
+</head>
 <body>
     <h1>لیست محصولات</h1>
     <div class="product-list">
@@ -17,6 +17,7 @@
                     <p><?php echo htmlspecialchars($product['description']); ?></p>
                     <p>قیمت: <?php echo htmlspecialchars($product['price']); ?> تومان</p>
                     <img src="../assets/images/<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+                    <a href="../views/product_details.php?id=<?php echo htmlspecialchars($product['id']); ?>" class="btn">مشاهده جزئیات</a> <!-- لینک به جزئیات محصول -->
                     <form action="../controllers/cart_controller.php" method="get" class="product-form">
                         <input type="hidden" name="action" value="add">
                         <input type="hidden" name="id" value="<?php echo htmlspecialchars($product['id']); ?>">

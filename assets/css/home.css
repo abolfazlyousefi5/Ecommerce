@@ -9,17 +9,17 @@
 .hero h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #55f5e1; /* رنگ متن عنوان */
+  color: #007a8b; /* رنگ متن عنوان */
 }
 
-.hero p {
+.hero h4 {
   font-size: 18px;
   margin-bottom: 30px;
-  color: #ff9e79; /* رنگ متن توضیحات */
+  color: #246872; /* رنگ متن توضیحات */
 }
 
 .hero .btn {
-  background-color: #007a8b; /* رنگ دکمه */
+  background-color: #19a492;  /* رنگ دکمه */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -28,5 +28,5 @@
 }
 
 .hero .btn:hover {
-  background-color: #55f5e1; /* رنگ دکمه در حالت هاور */
+  background-color: #007a8b; /* رنگ دکمه در حالت هاور */
 }

@@ -15,6 +15,7 @@ $db = $database->getConnection();
 $product = new Product($db);
 $product->id = $_GET['id'];
 $product->read_single();
+$similar_products = $product->getSimilarProducts();
 
 $comment = new Comment($db);
 $comment->product_id = $product->id;
@@ -86,6 +87,24 @@ $average_rating = $average_rating ?: 0;
                 <button type="submit" class="btn">ارسال نظر</button>
             </form>
         </div>
+        
+        <div class="similar-products">
+            <h3>محصولات مشابه</h3>
+            <?php if (!empty($similar_products)): ?>
+                <div class="product-list">
+                    <?php foreach ($similar_products as $similar_product): ?>
+                        <div class="product">
+                            <h4><?php echo htmlspecialchars($similar_product['name']); ?></h4>
+                            <p><?php echo htmlspecialchars($similar_product['description']); ?></p>
+                            <a href="product_details.php?id=<?php echo htmlspecialchars($similar_product['id']); ?>" class="btn">مشاهده محصول</a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php else: ?>
+                <p>هیچ محصول مشابهی یافت نشد.</p>
+            <?php endif; ?>
+        </div>
+
     </div>
     <footer>
         <p>© 2024 فروشگاه الکترونیکی ما. تمامی حقوق محفوظ است.</p>

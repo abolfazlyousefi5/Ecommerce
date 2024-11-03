@@ -1,8 +1,10 @@
 <?php
+session_start();
 require_once '../config/database.php';
 require_once '../models/Product.php';
 require_once '../models/Comment.php';
 require_once '../models/Rating.php';
+require_once '../models/Wishlist.php';
 
 if (!isset($_GET['id'])) {
     echo "محصول یافت نشد.";
@@ -25,6 +27,11 @@ $rating = new Rating($db);
 $rating->product_id = $product->id;
 $average_rating = $rating->read_avg_for_product();
 $average_rating = $average_rating ?: 0;
+
+$wishlist = new Wishlist($db);
+$wishlist->user_id = $_SESSION['user_id'];
+$wishlist->product_id = $product->id;
+$is_in_wishlist = $wishlist->isInWishlist();
 ?>
 <!DOCTYPE html>
 <html lang="fa">
@@ -48,6 +55,19 @@ $average_rating = $average_rating ?: 0;
         <p>قیمت: <?php echo htmlspecialchars($product->price); ?> تومان</p>
         <img src="../assets/images/<?php echo htmlspecialchars($product->image); ?>" alt="<?php echo htmlspecialchars($product->name); ?>">
         <a href="../controllers/product_controller.php" class="btn">بازگشت به لیست محصولات</a>
+
+        <?php if ($is_in_wishlist): ?>
+            <form action="../controllers/remove_from_wishlist_controller.php" method="post">
+                <input type="hidden" name="product_id" value="<?php echo htmlspecialchars($product->id); ?>">
+                <button type="submit" class="btn">حذف از لیست علاقه‌مندی‌ها</button>
+            </form>
+        <?php else: ?>
+            <form action="../controllers/add_to_wishlist_controller.php" method="post">
+                <input type="hidden" name="product_id" value="<?php echo htmlspecialchars($product->id); ?>">
+                <button type="submit" class="btn">افزودن به لیست علاقه‌مندی‌ها</button>
+            </form>
+        <?php endif; ?>
+
         <div class="average-rating">
             <h3>امتیاز میانگین: <?php echo round($average_rating, 1); ?></h3>
         </div>

@@ -14,10 +14,12 @@
             <nav>
                 <ul>
                     <li><a href="views/register.php">ثبت‌نام</a></li>
-                    <li><a href="views/login.php" >ورود</a></li>
+                    <li><a href="views/login.php">ورود</a></li>
+                    <li><a href="views/admin_register.php">ثبت‌نام ادمین</a></li>
+                    <li><a href="views/admin_login.php">ورود ادمین</a></li>
                     <li><a href="views/edit_profile.php">ویرایش پروفایل</a></li> 
-                    <li><a href="views/logout.php" >خروج</a></li>
-                    <li><a href="views/order_history.php" >تاریخچه سفارشات</a></li>
+                    <li><a href="views/logout.php">خروج</a></li>
+                    <li><a href="views/order_history.php">تاریخچه سفارشات</a></li>
                 </ul>
             </nav>
         </div>

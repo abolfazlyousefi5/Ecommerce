@@ -1,0 +1,185 @@
+/* استایل کلی برای صفحه */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #181818;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* استایل هدر */
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  padding-left: 20px;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #00cccc;
+  text-shadow: 0 0 5px #00cccc;
+}
+
+/* استایل اصلی */
+main .content {
+  padding: 40px;
+  background-color: #212121;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* استایل جدول محصولات */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #444444;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3d4d6c;
+  color: #00ffcc;
+}
+
+tr:nth-child(even) {
+  background: linear-gradient(135deg, #55f5e1, #ff9e79, #007a8b, #d9dae4); /* رنگ‌های گرادیان */
+}
+
+tr:hover {
+  background-color: #1073b0;
+  /* cursor: pointer; */
+}
+
+/* استایل فرم */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea,
+form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #444444;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="file"] {
+  display: none;
+}
+
+form .custom-file-upload {
+  border: 1px solid #444444;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #00ffcc;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form .custom-file-upload:hover {
+  background-color: #00cccc;
+  color: #000000;
+}
+
+form .file-name {
+  margin-top: 10px;
+  font-style: italic;
+  color: #cccccc;
+}
+
+form select {
+  background-image: none;
+  appearance: none;
+}
+
+form select:focus {
+  border-color: #00ffcc;
+}
+
+/* استایل دکمه‌ها */
+button {
+  background-color: #00ffcc;
+  color: #000000;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cccc;
+  color: #00cccc;
+}
+
+/* استایل فوتر */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+}

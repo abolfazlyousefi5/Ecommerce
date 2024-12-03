@@ -1,7 +1,7 @@
 <?php
 session_start();
 session_destroy();
-header("Location: register.php"); // هدایت به صفحه ثبت‌نام بعد از خروج
+header("Location: ../index.php"); // هدایت به صفحه ثبت‌نام بعد از خروج
 exit();
 ?>
 <!DOCTYPE html>

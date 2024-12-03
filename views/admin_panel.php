@@ -22,7 +22,7 @@ if (!isset($_SESSION['is_admin']) & $_SESSION['is_admin'] !== true) {
             <nav>
                 <ul>
                     <li><a href="add_product.php">افزودن محصول</a></li>
-                    <li><a href="edit_products.php">ویرایش محصولات</a></li>
+                    <li><a href="edit_product.php">ویرایش محصولات</a></li>
                     <li><a href="order_management.php">مدیریت سفارشات</a></li>
                     <li><a href="logout.php">خروج</a></li>
                 </ul>

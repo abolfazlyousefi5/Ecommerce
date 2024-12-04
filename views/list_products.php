@@ -11,13 +11,16 @@ $stmt = $product->read();
 ?>
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <title>لیست محصولات</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/list_products.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/add_product.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/list_products.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -47,17 +50,17 @@ $stmt = $product->read();
                 </thead>
                 <tbody>
                     <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
-                    <tr>
-                        <td><?php echo htmlspecialchars($row['id']); ?></td>
-                        <td><?php echo htmlspecialchars($row['name']); ?></td>
-                        <td><?php echo htmlspecialchars($row['description']); ?></td>
-                        <td><?php echo htmlspecialchars($row['price']); ?></td>
-                        <td><img src="<?php echo htmlspecialchars($row['image']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>" width="50"></td>
-                        <td><?php echo htmlspecialchars($row['category_id']); ?></td>
-                        <td>
-                            <a href="edit_product.php?id=<?php echo $row['id']; ?>">ویرایش</a>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td><?php echo htmlspecialchars($row['id']); ?></td>
+                            <td><?php echo htmlspecialchars($row['name']); ?></td>
+                            <td><?php echo htmlspecialchars($row['description']); ?></td>
+                            <td><?php echo htmlspecialchars($row['price']); ?></td>
+                            <td><img src="<?php echo htmlspecialchars($row['image']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>" width="50"></td>
+                            <td><?php echo htmlspecialchars($row['category_id']); ?></td>
+                            <td>
+                                <a href="edit_product.php?id=<?php echo $row['id']; ?>">ویرایش</a>
+                            </td>
+                        </tr>
                     <?php endwhile; ?>
                 </tbody>
             </table>
@@ -67,4 +70,5 @@ $stmt = $product->read();
         <p>© 2024 پنل مدیریتی فروشگاه. تمامی حقوق محفوظ است.</p>
     </footer>
 </body>
+
 </html>

@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($product->update()) {
-        header("Location: ../views/list_products.php");
+        header("Location: ../views/edit_products.php");
         exit;
     } else {
         echo "خطا در ویرایش محصول. لطفاً دوباره تلاش کنید.";

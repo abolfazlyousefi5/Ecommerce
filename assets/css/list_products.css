@@ -115,7 +115,7 @@ form select {
   border: 1px solid #444444;
   border-radius: 4px;
   background-color: #2a2a2a;
-  color: #ffffff;
+  color: #285e66;
   transition: border-color 0.3s ease;
 }
 
@@ -130,7 +130,7 @@ form .custom-file-upload {
   cursor: pointer;
   border-radius: 4px;
   background-color: #00ffcc;
-  color: #000000;
+  color: #276a6d;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

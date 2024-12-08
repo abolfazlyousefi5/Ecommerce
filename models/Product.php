@@ -60,14 +60,23 @@ class Product
 
     public function update()
     {
-        $query = "UPDATE " . $this->table_name . " SET name = :name, description = :description, price = :price, image = :image, category_id = :category_id WHERE id = :id";
+        $query = "UPDATE " . $this->table_name . " SET 
+                  name = :name, 
+                  description = :description, 
+                  price = :price, 
+                  image = :image, 
+                  category_id = :category_id 
+                  WHERE id = :id";
+
         $stmt = $this->conn->prepare($query);
+
         $stmt->bindParam(':name', $this->name);
         $stmt->bindParam(':description', $this->description);
         $stmt->bindParam(':price', $this->price);
         $stmt->bindParam(':image', $this->image);
         $stmt->bindParam(':category_id', $this->category_id);
         $stmt->bindParam(':id', $this->id);
+
         try {
             if ($stmt->execute()) {
                 return true;
@@ -77,6 +86,7 @@ class Product
             return false;
         }
     }
+
 
     public function getSimilarProducts()
     {

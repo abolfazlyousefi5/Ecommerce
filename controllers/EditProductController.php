@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             mkdir($target_dir, 0777, true);
         }
 
-        // آپلود فایل
+        // آپلود تصویر
         $target_file = $target_dir . basename($image);
         if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
             $product->image = $target_file;
@@ -44,8 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($product->update()) {
-        header("Location: ../views/edit_product.php");
-        exit;
+        header("Location: ../views/edit_product.php"); // تغییر مسیر به صفحه لیست محصولات
+        // exit;
     } else {
         echo "خطا در ویرایش محصول. لطفاً دوباره تلاش کنید.";
     }

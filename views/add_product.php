@@ -31,7 +31,7 @@ if (!isset($_SESSION['is_admin']) && $_SESSION['is_admin'] !== true) {
             <nav>
                 <ul>
                     <li><a href="admin_panel.php">صفحه اصلی پنل</a></li>
-                    <li><a href="edit_products.php">ویرایش محصولات</a></li>
+                    <li><a href="edit_product.php">ویرایش محصولات</a></li>
                     <li><a href="order_management.php">مدیریت سفارشات</a></li>
                     <li><a href="logout.php">خروج</a></li>
                 </ul>

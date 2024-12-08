@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $category_id = (int) $_POST['category_id'];
 
     // بررسی دایرکتوری uploads
-    $target_dir = "../uploads/";
+    $target_dir = "../assets/images/";
     if (!is_dir($target_dir)) {
         mkdir($target_dir, 0777, true);
     }

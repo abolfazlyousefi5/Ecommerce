@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // بررسی و آپلود تصویر جدید در صورت تغییر
     if ($image) {
-        $target_dir = "../uploads/";
+        $target_dir = "../assets/images/";
         if (!is_dir($target_dir)) {
             mkdir($target_dir, 0777, true);
         }

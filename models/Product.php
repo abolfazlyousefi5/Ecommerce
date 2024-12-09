@@ -57,6 +57,15 @@ class Product
         $this->image = $row['image'];
         $this->category_id = $row['category_id'];
     }
+    public function search($keywords)
+    {
+        $query = "SELECT * FROM " . $this->table_name . " WHERE name LIKE :keywords OR description LIKE :keywords ORDER BY created_at DESC";
+        $stmt = $this->conn->prepare($query);
+        $keywords = "%{$keywords}%";
+        $stmt->bindParam(':keywords', $keywords);
+        $stmt->execute();
+        return $stmt;
+    }
 
     public function update()
     {
@@ -78,6 +87,21 @@ class Product
         $stmt->bindParam(':category_id', $this->category_id);
         $stmt->bindParam(':id', $this->id);
 
+        try {
+            if ($stmt->execute()) {
+                return true;
+            }
+        } catch (PDOException $e) {
+            printf("Error: %s.\n", $e->getMessage());
+            return false;
+        }
+    }
+
+    public function delete()
+    {
+        $query = "DELETE FROM " . $this->table_name . " WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':id', $this->id);
         try {
             if ($stmt->execute()) {
                 return true;

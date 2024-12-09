@@ -12,8 +12,8 @@ $database = new Database();
 $db = $database->getConnection();
 
 $product = new Product($db);
-$product->name = isset($_GET['search']) ? $_GET['search'] : '';
-$stmt = $product->search();
+$keywords = isset($_GET['search']) ? $_GET['search'] : '';
+$stmt = $product->search($keywords);
 
 $products = array();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

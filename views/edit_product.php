@@ -112,6 +112,10 @@ if (isset($_GET['id'])) {
 
                 <button type="submit">ویرایش محصول</button>
             </form>
+            <form action="../controllers/DeleteProductController.php" method="post">
+                <input type="hidden" name="id" value="<?php echo htmlspecialchars($editProduct->id, ENT_QUOTES, 'UTF-8'); ?>">
+                <button type="submit" class="btn btn-danger">حذف محصول</button>
+            </form>
         </div>
         <?php endif; ?>
     </main>

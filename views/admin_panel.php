@@ -8,6 +8,7 @@ if (!isset($_SESSION['is_admin']) & $_SESSION['is_admin'] !== true) {
 ?>
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <title>پنل مدیریتی</title>
@@ -15,12 +16,14 @@ if (!isset($_SESSION['is_admin']) & $_SESSION['is_admin'] !== true) {
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>پنل مدیریتی</h1>
             <nav>
                 <ul>
+                    <li><a href="../controllers/product_controller.php">محصولات</a></li>
                     <li><a href="add_product.php">افزودن محصول</a></li>
                     <li><a href="edit_product.php">ویرایش محصولات</a></li>
                     <li><a href="order_management.php">مدیریت سفارشات</a></li>
@@ -39,4 +42,5 @@ if (!isset($_SESSION['is_admin']) & $_SESSION['is_admin'] !== true) {
         <p>© 2024 پنل مدیریتی فروشگاه. تمامی حقوق محفوظ است.</p>
     </footer>
 </body>
+
 </html>

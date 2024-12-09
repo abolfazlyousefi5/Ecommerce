@@ -60,12 +60,13 @@ class Product
 
     public function update()
     {
-        $query = "UPDATE " . $this->table_name . " SET 
-                  name = :name, 
-                  description = :description, 
-                  price = :price, 
-                  image = :image, 
-                  category_id = :category_id 
+        $query = "UPDATE " . $this->table_name . " 
+                  SET 
+                      name = :name, 
+                      description = :description, 
+                      price = :price, 
+                      image = :image, 
+                      category_id = :category_id 
                   WHERE id = :id";
 
         $stmt = $this->conn->prepare($query);
@@ -86,8 +87,6 @@ class Product
             return false;
         }
     }
-
-
     public function getSimilarProducts()
     {
         $query = "SELECT * FROM " . $this->table_name . " WHERE category_id = :category_id AND id != :id LIMIT 4";

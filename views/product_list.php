@@ -21,7 +21,7 @@
                     <h2><?php echo htmlspecialchars($product['name']); ?></h2>
                     <p><?php echo htmlspecialchars($product['description']); ?></p>
                     <p>قیمت: <?php echo htmlspecialchars($product['price']); ?> تومان</p>
-                    <img src="../assets/images/<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+                    <img src="<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
                     <a href="../views/product_details.php?id=<?php echo htmlspecialchars($product['id']); ?>" class="btn">مشاهده جزئیات</a> <!-- لینک به جزئیات محصول -->
                     <form action="../controllers/cart_controller.php" method="get" class="product-form">
                         <input type="hidden" name="action" value="add">

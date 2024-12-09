@@ -21,8 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $product->price = $price;
     $product->category_id = $category_id;
 
-    // بررسی و آپلود تصویر جدید در صورت تغییر
-    if ($image) {
+    // بررسی آپلود تصویر جدید
+    if (!empty($image)) {
+        // بررسی دایرکتوری uploads
         $target_dir = "../assets/images/";
         if (!is_dir($target_dir)) {
             mkdir($target_dir, 0777, true);
@@ -37,18 +38,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit;
         }
     } else {
-        // عدم تغییر تصویر (استفاده از تصویر قبلی)
+        // عدم تغییر تصویر
         $product->read_single();
-        $product->image = $product->image;  // حفظ تصویر قبلی
+        $product->image = $product->image;
     }
 
-    // بروزرسانی محصول
     if ($product->update()) {
-        header("Location: ../views/edit_product.php?id=" . $product->id); // تغییر مسیر به صفحه ویرایش محصول خود
+        header("Location: ../views/edit_product.php");
         exit;
     } else {
         echo "خطا در ویرایش محصول. لطفاً دوباره تلاش کنید.";
     }
 }
-
 ?>
